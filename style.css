@@ -28,8 +28,8 @@ body {
   align-items: center;
 }
 
-/* ---------- main section ---------- */
-#main {
+/* ---------- main section ---------- 
+<!--#main {
   width: 122%;
   height:618px;
   padding: 5em 0;
@@ -50,6 +50,25 @@ body {
   z-index: -1;
   background: black;
   
+}*/
+#main {
+  width: 100%;
+  padding: 5em 0;
+  position: relative;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+#main::before {
+     
+      content: "";
+      width: 100%;
+      height: 41em;
+      position: absolute;
+      right: 0em;
+      z-index: -1;
+      background: rgb(19, 19, 19);
+      margin-bottom: 64px;
+
 }
 #main .userInfo {
   margin: 0 30px;
@@ -71,7 +90,8 @@ p .second{
   width: 30em;
   height: 30em;
   border-radius: 50%;
-  margin: -12px 433px;
+  margin: 0 -68px;
+  margin-top: 0px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.479);
 }
 #main .userInfo .btn {
@@ -349,10 +369,10 @@ footer .social_media_icons a:hover i{
 }
 
 /* ---------- Media Query ---------- */
-@media (max-width: 1629px) {
-  #main .userImg img {
-    width: 25em;
-    height: 18em;
+@media (max-width: 1243px) {
+  #main .user_img img {
+    width: 15em;
+    height: 15em;
   }
   .skills {
     height: 100%;
@@ -364,8 +384,10 @@ footer .social_media_icons a:hover i{
   .about div{
     width: 70%;
   }
+  
 }
 @media (max-width: 900px) {
+  
   .skills {
     height: 100%;
     padding: 5em 0;
@@ -390,8 +412,13 @@ footer .social_media_icons a:hover i{
   }
 }
 @media (max-width: 700px) {
+ 
   body {
     font-size: 13px;
+  }
+  #main .user_info .user_name {
+    
+    font-size: 4em;
   }
   .skill_box .box{
     margin: 2em 0.5em;
@@ -400,9 +427,11 @@ footer .social_media_icons a:hover i{
   }
 }
 @media (max-width: 450px) {
-  #main .userImg img{
-    width: 20em;
-    height: 20em;
+  
+    
+  #main .user_info .user_name {
+    
+    font-size: 3em;
   }
   .projects .container .main_box .icon{
     height: 100%;
