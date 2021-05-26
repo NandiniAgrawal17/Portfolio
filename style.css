@@ -28,29 +28,6 @@ body {
   align-items: center;
 }
 
-/* ---------- main section ---------- 
-<!--#main {
-  width: 122%;
-  height:618px;
-  padding: 5em 0;
-  position: relative;
-  justify-content: space-around;
-  flex-wrap: wrap-reverse;
-  margin-bottom: -12px;
-  margin-top: -53px;
-  
-  
-}
-#main::before {
-  content: "";
-  width: 100%;
-  height: 34em;
-  position: absolute;
-  right: 25em;
-  z-index: -1;
-  background: black;
-  
-}*/
 #main {
   width: 100%;
   padding: 5em 0;
@@ -66,7 +43,7 @@ body {
       position: absolute;
       right: 0em;
       z-index: -1;
-      background: rgb(19, 19, 19);
+      background: black;
       margin-bottom: 64px;
 
 }
@@ -75,22 +52,20 @@ body {
 }
 #main .userInfo .userName {
   font-family: var(--font);
-  font-size: 5em;
+  font-size: 4em;
 }
 #main p {
   font-family: var(--secondary-font);
-  font-size: 2.3em;
+  font-size: 2em;
   color: var(--light-color);
-  margin-bottom: 0.5em;
+  ;
 }
-p .second{
-   margin-bottom: 36px;
-}
+
 #main .userImg img {
   width: 30em;
   height: 30em;
   border-radius: 50%;
-  margin: 0 -68px;
+  margin: 0 0px;
   margin-top: 0px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.479);
 }
@@ -130,12 +105,12 @@ p .second{
   margin: 2em;
 }
 .about_heading {
-  margin-left: -179px;
-  font-size: 7em;
+  
+  font-size: 6em;
   font-family: var(--font);
 }
 .about p {
-  margin-left: -181px;
+  
   font-size: 1.9em;
   color: var(--color);
   opacity: 0.8;
@@ -303,7 +278,7 @@ p .second{
   width: 2em;
   height: 150px;
   margin-left: 0.1em;
-  font-size: 8em;
+  font-size: 5.5em;
 }
 .projects .container .main_box .box {
   width: 20em;
@@ -371,23 +346,35 @@ footer .social_media_icons a:hover i{
 /* ---------- Media Query ---------- */
 @media (max-width: 1243px) {
   #main .user_img img {
-    width: 15em;
-    height: 15em;
+    width: 20em;
+    height: 20em;
   }
+  
+
   .skills {
     height: 100%;
     padding: 5em 0;
   }
   .about {
     flex-direction: column;
+    
   }
   .about div{
     width: 70%;
   }
   
 }
-@media (max-width: 900px) {
-  
+@media (max-width: 1010px) {
+#main .user_img img {
+    width: 15em;
+    height: 15em;
+  }
+#main::before { 
+      width: 100%;
+      height: 56em;      
+      margin-bottom: 64px;
+
+}  
   .skills {
     height: 100%;
     padding: 5em 0;
